@@ -1,0 +1,14 @@
+tracking_platform:
+   dhl: 
+      url: https://www.dhl.com/en.html
+      text_input_selector: textarea[name="AWB"]
+      submit_button_selector: button[value="Track"]
+   vac: 
+      url: https://www.vfsglobal.ca/IRCC-GPTWave1/Track/Index?q=shSA0YnE4pLF9Xzwon/x/CQ1P0LBKn66dLdNUfueK+yzShCR5+RPxbigEFl/W14/B2caAAJ+pjEGG2r7ohd6rA==
+      tracking_id_input_selector: input#Barcode
+      date_input_selector: input#datetimepicker1
+      year_picker_selector: select.ui-datepicker-year
+      month_picker_selector: select.ui-datepicker-month
+      day_picker_selector: a.ui-state-default
+   lautech:
+      url: http://transcript.lautech.edu.ng/tracking.php?track_no={LAUTECH_TRANSCRIPT_APPLICATION_ID}
