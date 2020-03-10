@@ -4,6 +4,7 @@ from helpers import read_file
 from lib import DHLPackageTracker, VacApplicationTracker
 import os
 
+
 load_dotenv()
 
 
@@ -16,7 +17,7 @@ if __name__ == '__main__':
     vac_application_tracker = VacApplicationTracker(app_config)
 
     vac_meta = {
-        'VT_TRACKING_ID': os.getenv('WAEC_TRANSCRIPT_TRACKING_ID'),
+        'VT_TRACKING_ID': os.getenv('VT_TRACKING_ID'),
         'USER_DOB_YEAR': os.getenv('USER_DOB_YEAR'),
         'USER_DOB_MONTH': os.getenv('USER_DOB_MONTH'),
         'USER_DOB_DAY': os.getenv('USER_DOB_DAY')
