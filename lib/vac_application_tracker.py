@@ -39,5 +39,5 @@ class VacApplicationTracker(BaseTracker):
         month_input = Select(self.get_element('month_picker_selector'))
         month_input.select_by_value(str(dob_month))
 
-        day_input = self.browser.find_element_by_xpath("//a[text()='1']")
+        day_input = self.browser.find_element_by_xpath("//a[text()='{}']".format(dob_day))
         day_input.click()
